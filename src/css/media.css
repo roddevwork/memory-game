@@ -1,0 +1,65 @@
+@media screen and (width >= 750px) {
+  h1 {
+  margin: 20px;
+  font-size: 2rem;
+  }
+
+  button {
+    height: 130px;
+    width: 130px;
+    
+  }
+  .section2 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+  }
+  .section2 h2 {
+    font-size: 2.5rem;
+  }
+
+  .estadisticas{
+    border: none;
+  }
+  .reload-icon {
+    margin-top: 30px;
+    width: 60px;
+    height: 60px;
+  }
+
+  footer {
+    height: 25px;
+  }
+  footer p {
+    font-size: 2rem;
+   
+  }
+}
+
+@media screen and (width >= 1050px) {
+  h1 {
+    margin: 30px;
+    font-size: 4rem;
+    }
+    button {
+      height: 200px;
+      width: 200px;
+      
+    }
+    .section2 {
+      gap: 30px;
+      
+    }
+    .section2 h2 {
+      font-size: 3rem;
+
+    }
+    .reload-icon {
+      margin-top: 40px;
+      width: 60px;
+      height: 60px;
+    }
+
+    
+}
