@@ -21,14 +21,12 @@ const tableId = document.querySelector('#table')
 // -> Listeners
 btnReload.addEventListener("click", reloadGame)
 
-
-
 // -> Functions
 function reloadGame() {
   location.reload()
 }
 
-//. Generacion de numeros aleatorios
+//. number generator
 number = number.sort(() => {
   return Math.random() - 0.5;
 });
@@ -36,7 +34,7 @@ number = number.sort(() => {
 function contarTiempo() {
   tiempoRegresivoId = setInterval(() => {
     timer--;
-    mostrarTiempo.innerHTML = ` Tiempo: ${timer} seg`;
+    mostrarTiempo.innerHTML = `Time: ${timer} seg`;
     if (timer == 0) {
       clearInterval(tiempoRegresivoId);
       tableId.classList.add('table-opacity')
@@ -54,14 +52,12 @@ function bloquearTarjetas() {
 }
 
 function destapar(id) {
-  // temporizador, se ejecuta una vez
   if (temporizador == false) {
     contarTiempo();
     temporizador = true;
   }
 
   tarjetasDestapadas = tarjetasDestapadas + 1;
-  // console.log(tarjetasDestapadas);
 
   if (tarjetasDestapadas == 1) {
     //mostrar primer numero
@@ -93,13 +89,11 @@ function destapar(id) {
         btnReload.classList.remove('inactive')
         tableId.classList.add('table-opacity')
 
-        mostarAciertos.innerHTML = ` Hits: ${aciertos}  👏`;
-        mostrarTiempo.innerHTML = `You Win!! You did it in ${timerInicial - timer
-          } seg`;
-        mostrasMovimientos.innerHTML = `Movements: ${movimientos} 🤘 😎 `;
+        mostarAciertos.innerHTML = ` Hits: ${aciertos} `;
+        mostrarTiempo.innerHTML = `You did it in ${timerInicial - timer} seg`;
+        mostrasMovimientos.innerHTML = `Movements: ${movimientos} `;
       }
     } else {
-      // Mostrar momentaneamente valores y volver a tapar
       setTimeout(() => {
         tarjeta1.innerHTML = " ";
         tarjeta2.innerHTML = " ";

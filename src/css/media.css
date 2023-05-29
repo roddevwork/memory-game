@@ -1,12 +1,16 @@
 @media screen and (width >= 750px) {
   h1 {
   margin: 20px;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  }
+
+  p{
+    font-size: 2rem;
   }
 
   button {
-    height: 130px;
-    width: 130px;   
+    height: 110px;
+    width: 110px;   
   }
 
   .section2 {
@@ -15,6 +19,7 @@
     gap: 20px;
     
   }
+
   .section2 h2 {
     font-size: 2.5rem;
   }
@@ -22,15 +27,17 @@
   .estadisticas{
     border: none;
   }
+
   .reload-icon {
-    margin-top: 30px;
-    width: 60px;
-    height: 60px;
+    padding-top: 12rem;
+    width: 373px;
+    height: 327px;
   }
 
   footer {
     height: 25px;
   }
+
   footer p {
     font-size: 2rem;
    
@@ -42,24 +49,24 @@
     margin: 30px;
     font-size: 4rem;
     }
+
     button {
-      height: 200px;
-      width: 200px;
-      
+      height: 120px;
+      width: 120px;  
     }
+
     .section2 {
-      gap: 30px;
+      gap: 3rem;
       
     }
     .section2 h2 {
       font-size: 3rem;
-
     }
+    
     .reload-icon {
-      margin-top: 40px;
-      width: 60px;
-      height: 60px;
+      padding-top: 14rem;
+      width: 430px;
+      height:327px;
     }
-
     
 }

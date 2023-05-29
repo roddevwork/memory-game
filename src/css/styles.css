@@ -3,30 +3,36 @@
   --white: rgb(255, 255, 255);
   --background-color:  rgba(69, 8, 159, 1);
 }
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 html {
   font-size: 62.5%; /* 10px = 1rem  */
   font-family: sans-serif;
 }
+
 body {
     color: var(--white);
     background-color: var(--background-color) ;
 }
+
 a {
   text-decoration: none;
 }
+
 main {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 20px;
+  gap: 2rem;
 }
+
 .section1 {
   display: flex;
   justify-content: center;
@@ -37,24 +43,30 @@ main {
 h1 {
   padding: 20px 0 10px 0;
 }
+
+p {
+font-size: 1.5rem;
+}  
+
 table{
   position: relative;
-
 }
+
 .table-opacity {
   opacity: .4;
 }
 
 .reload-icon {
   position: absolute;
-  width: 40%;
-  height: 40%;
-  cursor: pointer;
+  width: 144px;
+  height: 256px;
+  padding-top: 4rem;
   opacity: .7;
+  cursor: pointer;
 }
 
 .reload-icon:hover {
-  transform: scale(1.5);
+  transform: scale(1.1);
 }
 
 .inactive {
@@ -67,10 +79,9 @@ button {
   font-size: 4rem;
   color: var(--white);
   font-weight: bold;
-}
-button:hover {
   cursor: pointer;
 }
+
 .section2 {
   min-width: 250px;
   border-top-right-radius: 8px;
@@ -88,7 +99,6 @@ button:hover {
   border: 1px solid var(--white);
 }
 
-
 footer {
   position: absolute;
   bottom: 1vh;
@@ -97,6 +107,7 @@ footer {
   text-align: center;
   font-weight: bold;
 }
+
 footer p {
   font-size: 1.2rem;
  
