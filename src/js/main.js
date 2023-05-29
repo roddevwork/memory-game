@@ -36,9 +36,11 @@ number = number.sort(() => {
 function contarTiempo() {
   tiempoRegresivoId = setInterval(() => {
     timer--;
-    mostrarTiempo.innerHTML = ` Tiempo: ${timer} segundos`;
+    mostrarTiempo.innerHTML = ` Tiempo: ${timer} seg`;
     if (timer == 0) {
       clearInterval(tiempoRegresivoId);
+      tableId.classList.add('table-opacity')
+      btnReload.classList.remove('inactive')
       bloquearTarjetas();
     }
   }, 1000);
@@ -90,6 +92,7 @@ function destapar(id) {
         clearInterval(tiempoRegresivoId);
         btnReload.classList.remove('inactive')
         tableId.classList.add('table-opacity')
+
         mostarAciertos.innerHTML = ` Hits: ${aciertos}  👏`;
         mostrarTiempo.innerHTML = `You Win!! You did it in ${timerInicial - timer
           } seg`;

@@ -6,9 +6,9 @@
 
   button {
     height: 130px;
-    width: 130px;
-    
+    width: 130px;   
   }
+
   .section2 {
     display: flex;
     justify-content: center;
